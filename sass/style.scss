@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    .box_frame {
+        display: flex;
+        gap: 50px;
+
+        .box1 {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            %btn {
+                border: none;
+                cursor: pointer;
+                color: #23d59d;
+            }
+
+            %btn_1 {
+                border: none;
+                cursor: pointer;
+                color: gray;
+            }
+
+            @mixin btn_mix($padding, $border, $f_size, $bg_col, ) {
+                padding: $padding;
+                border-radius: $border;
+                font-size: $f_size;
+                background-color: $bg_col;
+            }
+
+            .btn1 {
+                @include btn_mix(20px, 10px, 25px, #fff);
+                @extend %btn;
+            }
+
+            .btn2 {
+                @include btn_mix(20px, 10px, 25px, rgb(232, 232, 232));
+                @extend %btn;
+            }
+
+            .btn3 {
+                @include btn_mix (20px, 10px, 25px, #fff);
+                @extend %btn_1;
+            }
+        }
+
+        .box2 {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            %btn {
+                border: none;
+                cursor: pointer;
+                color: #23d59d;
+            }
+
+            %btn_1 {
+                border: none;
+                cursor: pointer;
+                color: gray;
+            }
+
+            %btn_2 {
+                cursor: pointer;
+                border: none;
+                color: #fff;
+            }
+
+            @mixin btn_mix($padding, $border, $f_size, $bg_col, ) {
+                padding: $padding;
+                border-radius: $border;
+                font-size: $f_size;
+                background-color: $bg_col;
+            }
+
+            .btn4 {
+                @include btn_mix(20px, 10px, 25px, #21b3a7);
+                @extend %btn_2;
+            }
+
+            .btn5 {
+                @include btn_mix(20px, 10px, 25px, #21b3a7);
+                @extend %btn_2;
+            }
+
+            .btn6 {
+                @include btn_mix (20px, 10px, 25px, rgb(193, 193, 193));
+                @extend %btn_1;
+            }
+        }
+    }
+
+    .box3 {
+        display: flex;
+        gap: 50px;
+
+        %btn_3 {
+            cursor: pointer;
+            border: none;
+            color: #fff;
+        }
+
+        @mixin btn_mix($padding,$padding1, $border, $f_size, $bg_col, ) {
+            padding: $padding;
+            padding-left: $padding1;
+            padding-right: $padding1;
+            border-radius: $border;
+            font-size: $f_size;
+            background-color: $bg_col;
+        }
+
+        .btn7 {
+            @include btn_mix(50px, 60px, 50%, 40px, #21b3a7);
+            @extend %btn_3;
+        }
+
+    }
+}

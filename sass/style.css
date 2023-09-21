@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.box .box_frame {
+  display: flex;
+  gap: 50px;
+}
+.box .box_frame .box1 {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.box .box_frame .box1 .btn2, .box .box_frame .box1 .btn1 {
+  border: none;
+  cursor: pointer;
+  color: #23d59d;
+}
+.box .box_frame .box1 .box2 .btn6, .box .box_frame .box2 .box1 .btn6, .box .box_frame .box1 .btn3 {
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+.box .box_frame .box1 .btn1 {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: #fff;
+}
+.box .box_frame .box1 .btn2 {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: rgb(232, 232, 232);
+}
+.box .box_frame .box1 .btn3 {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: #fff;
+}
+.box .box_frame .box2 {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.box .box_frame .box2 .box1 .btn1, .box .box_frame .box1 .box2 .btn1, .box .box_frame .box2 .box1 .btn2, .box .box_frame .box1 .box2 .btn2 {
+  border: none;
+  cursor: pointer;
+  color: #23d59d;
+}
+.box .box_frame .box2 .btn6, .box .box_frame .box2 .box1 .btn3, .box .box_frame .box1 .box2 .btn3 {
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+.box .box_frame .box2 .btn5, .box .box_frame .box2 .btn4 {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+.box .box_frame .box2 .btn4 {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: #21b3a7;
+}
+.box .box_frame .box2 .btn5 {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: #21b3a7;
+}
+.box .box_frame .box2 .btn6 {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: rgb(193, 193, 193);
+}
+.box .box3 {
+  display: flex;
+  gap: 50px;
+}
+.box .box3 .btn7 {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+.box .box3 .btn7 {
+  padding: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 50%;
+  font-size: 40px;
+  background-color: #21b3a7;
+}/*# sourceMappingURL=style.css.map */
